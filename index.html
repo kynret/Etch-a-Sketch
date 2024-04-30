@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+    <div class="main">
+        <div class="toolSection">
+            <input type="color" name="" class="colorPicker">
+            <button class="btn reset">
+                RESET
+            </button>
+            <button class="btn randomColor">
+                RANDOM COLOR
+            </button>
+            <div class="gridSize">
+                0px
+            </div>
+            <div class="divGridSlider">
+                <input type="range" class = "gridSlider" min="1" max="100">
+            </div>
+        </div>
+        <div class="board">
+            
+        </div>
+    </div>
+    <div class="footer">
+        Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+          </script>
+          kynret
+          <a href="https://github.com/kynret" target="_blank">
+            <img src="img/github-mark-white.svg" width="25px" alt="">
+        </a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
