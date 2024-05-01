@@ -22,8 +22,7 @@ document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
 
 resetBtn.addEventListener("click", () =>{
-    board.innerHTML = "";
-    generate(currentSize);
+    reset();
 });
 
 slider.addEventListener("change", () =>{
@@ -68,6 +67,12 @@ function changeColor(e){
     e.target.style.backgroundColor = currentColor;
     if(randomMode == true) return e.target.style.backgroundColor = randomizeColor();
 }
+
+function reset(){
+    board.innerHTML = "";
+    generate(currentSize);
+}
+
 
 window.onload = () =>{
     generate(DEFAULT_SIZE);
